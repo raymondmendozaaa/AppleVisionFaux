@@ -1,3 +1,40 @@
 li {
     display: inline;
 }
+
+ul{
+    margin: 0;
+}
+
+body {
+    background-color: rgb(120,150,171);
+}
+
+nav{
+    background-color: rgb(187,211,223);
+    overflow: hidden;
+}
+
+.nav-links {
+    color: white;
+    text-decoration: none;
+    padding: 1.3rem;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    float: inline-end;
+}
+
+.nav-links:hover{
+    background-color: rgb(203,223,234);
+}
+
+.nav-logo {
+    color: white;
+    text-decoration: none;
+    padding: 1.3rem;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    float: inline-start;
+}

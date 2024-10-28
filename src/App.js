@@ -1,9 +1,10 @@
 import React, { useState, useRef, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import InsertQues from "./pages/InsertQues";
-import Layout from "./pages/Layout";
+import Layout from "./components/Layout";
 import Login from "./pages/Login";
 import NoPage from "./pages/NoPage";
 
@@ -51,7 +52,6 @@ export default function App() {
             index
             element={<Home questions={questions} answers={answers} />}
           />{" "}
-          // fix this
           <Route
             path="insertques"
             element={
@@ -65,6 +65,7 @@ export default function App() {
           />
           <Route path="/insert" element={<NoPage />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/contact" element={<Contact />} />
         </Route>
       </Routes>
     </BrowserRouter>
