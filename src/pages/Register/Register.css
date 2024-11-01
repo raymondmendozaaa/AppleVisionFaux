@@ -1,0 +1,136 @@
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+form{
+    max-width: 37.5rem;
+    width: 100%;
+    background: transparent;
+    padding: 1.56rem 1.56rem 1.88rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.63rem rgba(0, 0, 0,.5);
+    margin: 1.56rem;
+    font-family: 'Sedgwick Ave';
+}
+
+form h2{
+    font-size: 1.88rem;
+    text-align: center;
+    color: #333;
+    padding-top: 0.5rem;
+    font-family: 'Sedgwick Ave';
+}
+
+span{
+    margin-right: 0.63rem;
+    color: rgba(103,8,7,235);
+}
+
+form .input-box{
+    position: relative;
+    width: 100%;
+    height: 3.13rem;
+    margin: 4rem 0;
+}
+
+.input-box .field{
+    width: 95%;
+    height: 2.13rem;
+    background: transparent;
+    border: 0.13rem solid #fff;
+    outline: none;
+    border-radius: 0.38rem;
+    padding: 0.94rem;
+    font-size: 1rem;
+    font-family: 'Sedgwick Ave';
+    color: #fff;
+}
+
+.field-input{
+    color: white;
+}
+
+::placeholder{
+    color: white;
+}
+
+form button{
+    width: 100%;
+    height: 3.44rem;
+    background: rgba(60,139,138,255);
+    border: none;
+    border-radius: 0.38rem;
+    box-shadow: 0 0 0.63rem rgba(0, 0, 0,.5);
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: 'Sedgwick Ave';
+    color: #fff;
+    font-weight: 500;
+    margin-top: 1.56rem;
+    transition: .5s;
+}
+
+form button:hover{
+    background-color: rgba(40,119,118,235);
+}
+
+.input-box .icon{
+    position: absolute;
+    font-size: 1.2rem;
+    transform: translateY(-50%);
+    right: 0.8rem;
+    top: 125%;
+}
+
+.remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.91rem;
+    font-family: 'Sedgwick Ave';
+    margin: 0 0.3rem -0.1rem;
+    padding-top: 1rem;
+    color: white;
+}
+
+#remember{
+    font-weight: bold;
+}
+
+.remember-forgot label input{
+    color: #fff;
+    margin-right: 0.4rem;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    height: 1.25rem;
+    width: 1.88rem;
+    background-color: hsla(0, 0%, 100%, 0.5);
+    margin-left: 0.63rem;
+    outline: none;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:before {
+    font-size: 10pt;
+    content: "";
+    background-color: rgba(60,139,138,255);
+    display: flex;
+    justify-content: center;
+    width: 0.78rem;
+    height: 0.78rem;
+    margin-top: 0.25rem;
+    margin-left: 0.13rem;
+}
+  
+input[type="checkbox"]:checked {
+    background-color: rgba(20,99,98,215);
+}
+  
+  input[type="checkbox"]:checked:before {
+    content: "";
+    margin-left: 0.9rem;
+}

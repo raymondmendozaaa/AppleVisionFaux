@@ -1,12 +1,13 @@
 import React, { useState, useRef, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Contact from "./pages/Contact";
-import Home from "./pages/Home";
-import InsertQues from "./pages/InsertQues";
+import Contact from "./pages/Contact/Contact";
+import Home from "./pages/Home/Home";
+import InsertQues from "./pages/InsertQ/InsertQues";
 import Layout from "./components/Layout";
-import Login from "./pages/Login";
-import NoPage from "./pages/NoPage";
+import Login from "./pages/Login/Login";
+import Register from "./pages/Register/Register";
+import NoPage from "./pages/NoPage/NoPage";
 
 import "./style.css";
 
@@ -65,6 +66,7 @@ export default function App() {
           />
           <Route path="/insert" element={<NoPage />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
           <Route path="/contact" element={<Contact />} />
         </Route>
       </Routes>

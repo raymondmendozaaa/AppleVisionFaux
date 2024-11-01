@@ -7,34 +7,40 @@ ul{
 }
 
 body {
-    background-color: rgb(120,150,171);
+    background: url(loginbg.webp)
+    no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 nav{
-    background-color: rgb(187,211,223);
+    background-color: transparent;
     overflow: hidden;
+    border-bottom: 0.19rem solid rgba(0, 0, 0, .1);
 }
 
 .nav-links {
-    color: white;
+    color: rgba(0, 0, 0, .9);
     text-decoration: none;
-    padding: 1.3rem;
+    padding: 1.4rem;
     display: block;
     text-align: center;
     cursor: pointer;
     float: inline-end;
+    font-weight: bold;
+    font-family: 'Sedgwick Ave';
+    transition: .5s;
 }
 
 .nav-links:hover{
-    background-color: rgb(203,223,234);
+    background-color: rgba(60,139,138,255);
 }
 
 .nav-logo {
-    color: white;
     text-decoration: none;
+    width: 1rem;
     padding: 1.3rem;
     display: block;
-    text-align: center;
     cursor: pointer;
     float: inline-start;
 }

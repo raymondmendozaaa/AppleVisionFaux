@@ -1,7 +1,6 @@
 import React from 'react';
 import './Contact.css';
 import Swal from 'sweetalert2';
-
 const Contact = () => {
     const onSubmit = async (event) => {
         event.preventDefault();
@@ -29,7 +28,6 @@ const Contact = () => {
               });
         }
       };
-
     return (
         <section className='contact'>
             <form onSubmit={onSubmit}>
@@ -51,5 +49,4 @@ const Contact = () => {
         </section>
     )
 }
-
 export default Contact;
